@@ -18,6 +18,5 @@
 
 **version** -- view current version of program
 
-**credits** -- view develompmenter, and testers
+**credits** -- view developmenter, and testers
 
-**exit** (in event) -- discard action
