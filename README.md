@@ -12,3 +12,6 @@ A system needeatly files is a script "General", and folder "Checker". If you del
 
 ### I'm afraid of the command line, will there be a GUI version?
 Not yet, but will be in future.
+
+### What OS are supported?
+I tested this on Win11, soon test on Linux.
