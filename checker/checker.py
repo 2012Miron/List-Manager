@@ -1,7 +1,6 @@
 import os
 import glob
 
-# General function, checking files
 def check(folder_path, files):
     if not os.path.join(folder_path):
         return f"No files/folder"
