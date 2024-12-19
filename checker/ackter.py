@@ -3,8 +3,7 @@ import pickle
 
 # Set data
 folder_path = 'data'
-result_path = 'checker'
-result_path = os.path.join(result_path, 'result.txt')
+result_path = 'checker/result.txt'
 firstStart_path = os.path.join(folder_path, 'firstStart.pkl')
 firstStart = ""
 
