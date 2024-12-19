@@ -1,7 +1,7 @@
 ## What is this?
 This is a **List Manager**, like Google keep, but no GUI. Created to edit a data base, or write here a notes.
 All commands you can find in the program itself.
-And yes, your data only on your computer. Nobody can't read your personal data, or do worsted thigs.
+And yes, your data only on your computer.
 
 ### How it works?
 It works easy. Central script, with name "General", load data, and manipulate with him. Script "checker", is check your files, is them on right place. Script "ackter", 
