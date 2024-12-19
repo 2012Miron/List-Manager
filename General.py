@@ -56,7 +56,7 @@ while True:
     elif CMDI == "credits":
         print("")
         print("Developmenter: 2012 Miron")
-        print("Testers: golubdok")
+        print("Testers: golubdok (no in GitHub)")
     elif CMDI == "version":
         print("")
         print("List Manager, version 1.0")
