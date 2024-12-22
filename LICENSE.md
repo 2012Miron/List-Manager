@@ -1,4 +1,4 @@
-MIT License
+MIT License for the program List Manager
 
 Copyright (c) 2024 2012Miron
 
