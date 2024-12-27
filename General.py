@@ -39,6 +39,9 @@ if os.path.exists(folder_path):
     print("Data load sucsesfull.")
 else:
     print("Error. Not found necessary files. Please, check script checker.py, and ackter.py in folder checker.")
+    print("If you have not this files, download it from GitHub. Here link: https://github.com/2012Miron/List-Manager")
+    input("Press Enter to exit...")
+    exit()
 
 while True:
     CMDI = input("Enter command: ")
