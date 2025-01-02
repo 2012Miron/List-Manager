@@ -1,9 +1,10 @@
 import os
 import pickle
+from checker import check
 
 # Set data
+files = ['value.pkl', 'content.pkl', 'names.pkl']
 folder_path = 'data'
-result_path = 'checker/result.txt'
 firstStart_path = os.path.join(folder_path, 'firstStart.pkl')
 firstStart = ""
 
@@ -27,8 +28,7 @@ def create_files(folder_path, EN, EV, EC):
     with open(folder_path, 'wb') as file:
         pickle.dump(EV, file)
 
-with open(result_path, 'r') as status_file: # Read the result
-    status = status_file.read().strip()
+status = check(folder_path, files)
 
 if status == "No files/folder":
     EN = ["hide commands"]
