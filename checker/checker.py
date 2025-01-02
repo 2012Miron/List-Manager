@@ -14,14 +14,3 @@ def check(folder_path, files):
         return f"No {len(fifiles - len(files))} files"
     if len(fifiles) == len(files):
         return f"Ok"
-
-folder_path = 'data'
-files = ['value.pkl', 'content.pkl', 'names.pkl']
-result_path = os.path.join('checker', 'result.txt')
-# Set data
-
-result = check(folder_path, files)
-
-with open(result_path, 'w') as result_file:
-    result_file.write(result) # Write result to txt file
-print("Checking was complete.")
