@@ -62,7 +62,7 @@ while True:
         print("Testers: golubdok (no in GitHub)")
     elif CMDI == "version":
         print("")
-        print("List Manager, version 1.0")
+        print("List Manager, version 1.1")
     elif CMDI == "list":
         print(EN)
     elif CMDI[0:4] == "elem":
@@ -75,19 +75,20 @@ while True:
         else:
             print("Element not found. Check it, typing list")
     elif CMDI == "mkel":
-        NNel = input("Enter element name: ")
-        if NNel == "exit":
-            print("")
-        NCel = input("Enter content of element: ")
-        if NCel == "exit":
-            print("")
-        NVel = input("Enter element value: ")
-        if NVel == "exit":
-            print("")
-        EN.append(NNel)
-        EC.append(NCel)
-        EV.append(NVel)
-        print("Element created sucsesfull")
+        for count in range(1):
+            NNel = input("Enter element name: ")
+            if NNel == "exit" or NNel == "cancel":
+                break
+            NCel = input("Enter content of element: ")
+            if NCel == "exit" or NCel == "cancel":
+                break
+            NVel = input("Enter element value: ")
+            if NVel == "exit" or NVel == "cancel":
+                break
+            EN.append(NNel)
+            EC.append(NCel)
+            EV.append(NVel)
+            print("Element created sucsesfull")
     elif CMDI[:4] == "edit":
         if CMDI[5:] in EN:
             start = EN.index(CMDI[5:])
@@ -104,8 +105,8 @@ while True:
                 NewData = input("Enter new value: ")
                 EV[start] = NewData
                 print("Value changed sucsesfull")
-            elif WE == "exit":
-                print("")
+            elif WE == "exit" or WE == "cancel":
+                print("Canceled sucsesfull")
             else:
                 print("Incorrect input")
         else:
