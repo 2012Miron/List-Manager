@@ -20,3 +20,14 @@
 
 **credits** -- view developmenter, and testers
 
+**cancel (in command)** -- cancel current action
+
+**lists** -- view all lists in folder 'data'
+
+**curlist** -- view name of current list
+
+**cl** -- change current list. Before changing, need to save data by command **save**
+
+**mkli** -- create new list. After creating, you stay in list, where you enter command
+
+**delli [LIST NAME]** -- delete list from folder 'data'
