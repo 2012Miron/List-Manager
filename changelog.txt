@@ -1,0 +1,3 @@
+19.12.2024: List Manager 1.0. - Release. Have a many siriosly glitches.
+06.01.2025: List Manager 1.1. - Fix. Fixed all critical glitches, and improved optimisation
+06.02.2025: List Manager 1.2. - Big update. Added multi-lists support, and changed list format.
