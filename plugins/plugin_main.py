@@ -15,9 +15,9 @@ def loadList(List: str):
     if os.path.exists('data'):
         with open(f'data/{List}', 'r') as file:
             list1 = file.read()
-        names = list1[list1.find("0") + 3:list1.find("]") + 1]
-        content = list1[list1.find("1") + 3:list1.find("]", list1.find("1")) + 1]
-        value = list1[list1.find("2") + 3:list1.find("]", list1.find("2")) + 1]
+        names = list1[list1.find("["):list1.find("]") + 1]
+        content = list1[list1.find("[", list1.find("]")):list1.find("]", list1.find("]") + 1) + 1]
+        value = list1[list1.find("[", list1.find("]", list1.find("]"))):list1.find("]", list1.find("]", list1.find("]") + 1)) + 1]
         EN = ast.literal_eval(names)
         EC = ast.literal_eval(content)
         EV = ast.literal_eval(value)
