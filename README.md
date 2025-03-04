@@ -1,17 +1,16 @@
 ## What is this?
-This is a **List Manager**, like Google keep, but no GUI. Created to edit a data base, or write here a notes.
+This is a **List Manager** - data base editor. Created to edit a data base in .lmdb format, or write a notes.
 All commands you can find in the program itself.
 And yes, your data only on your computer.
 
 ### How it works?
-It works easy. Central script, with name "General", load data, and manipulate with him. Script "checker", is check your files, is them on right place. Script "ackter", 
-looks at the checker result, and makes a decision based on it (create a folder, files). Script "run-list-manager" is start program.
+It works easy. Central script, with name "General", just start functions of commands. Script "plugin_main" is load data, and manipulate with him.
 
 ### Okey, i get it. But what files should be NOT deleted, and renamed?
-A system needeatly files is a script "General", and folder "Checker". If you deleted those files, all program is stop working. Script "run-list-manager" is optional, and provides to running scripts in right order
+A system needeatly files is a script's "General.py" and "plugin_main.py". If you delete those files - program is stop work.
 
 ### I'm afraid of the command line, will there be a GUI version?
 Not yet, but will be in future.
 
 ### What OS are supported?
-I tested this on Win11, soon test on Linux.
+Windows 11 with Python interpreter, Linux.
