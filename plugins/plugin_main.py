@@ -155,7 +155,7 @@ def makeList():
     if CMDI == "cancel" or CMDI == "stop":
         return
     with open(f'{data_folder}/{CMDI}.lmdb', 'w') as file:
-        file.write("class names 0: ['hide commands']\nclass content 1: ['version -- version of program']\nclass value 2: ['1']")
+        file.write("['hide commands']\n['version -- version of program']\n['1']")
     print("List created sucsessfull")
 
 def deleteList(List: str):
