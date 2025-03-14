@@ -1,3 +1,7 @@
+# List Manager
+
+<img src="LM-icon.png" height=350>
+
 ## What is this?
 This is a **List Manager** - data base editor. Created to edit a data base in .lmdb format, or write a notes.
 All commands you can find in the program itself.
