@@ -70,7 +70,7 @@ def cmdHelp():
 
 def cmdCredits():
     print("")
-    print("Developed by Miron Software (Miron)")
+    print("Developed by Miron")
     print("Testers: golubdok (no in GitHub)")
 
 def cmdVersion():
