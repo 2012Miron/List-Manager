@@ -5,7 +5,6 @@
 ## What is this?
 This is a **List Manager** - data base editor. Created to edit a data base in .lmdb format, or write a notes.
 All commands you can find in the program itself.
-And yes, your data only on your computer.
 
 ### How it works?
 It works easy. Central script, with name "General", just start functions of commands. Script "plugin_main" is load data, and manipulate with him.
