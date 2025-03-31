@@ -2,7 +2,7 @@
 
 <img src="LM-icon.png" height=350>
 
-**List Manager** - is a _simple_ database editor, who can work only with LDB files. 
+**List Manager** - is a _simple_ database editor and viewer, who can work only with LDB files. 
 
 **But**, he have:
 * **All SQL based functionality**,
