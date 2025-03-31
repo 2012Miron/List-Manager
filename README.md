@@ -2,18 +2,16 @@
 
 <img src="LM-icon.png" height=350>
 
-## What is this?
-This is a **List Manager** - data base editor. Created to edit a data base in .lmdb format, or write a notes.
-All commands you can find in the program itself.
+**List Manager** - is a _simple_ database editor, who can work only with LDB files. 
 
-### How it works?
-It works easy. Central script, with name "General", just start functions of commands. Script "plugin_main" is load data, and manipulate with him.
+**But**, he have:
+* **All SQL based functionality**,
+* **Plugins support**,
+* **Simple database files**.
 
-### Okey, i get it. But what files should be NOT deleted, and renamed?
-A system needeatly files is a script's "General.py" and "plugin_main.py". If you delete those files - program is stop work.
+All, what you need - **Python 3.5** and higher. No additional libraries are required, which is a **plus**.
 
-### I'm afraid of the command line, will there be a GUI version?
-Not yet, but will be in future.
+## Documentation:
+[All commands](docs/ALL_COMMANDS.md),
 
-### What OS are supported?
-Windows 11 with Python interpreter, Linux.
+[Plugins](docs/PLUGINS.md)
