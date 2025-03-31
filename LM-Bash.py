@@ -1,5 +1,4 @@
-import os
-import pickle
+import os, pickle
 from plugins import plugin_main
 
 folder_path = 'data'
