@@ -10,19 +10,6 @@ Now, documentation:
 ### 1. Create file.
 Download project, and in folder `plugins` create your file. Next, if this need, write code to list loading. Like this:
 ```Python
-import os, ast
-
-if os.path.exists('data'):
-    with open(f'data/{List}', 'r') as file:
-        mainlist = file.read()
-    class_names = mainlist[mainlist.find('\n\n\n\n[') + 4:]
-    mainlist = mainlist.replace(mainlist[mainlist.find('\n\n\n\n'):], '')
-    mainlist = ast.literal_eval(mainlist)
-    class_names = ast.literal_eval(class_names)
-```
-
-Or, you can get mainlist from main plugin:
-```Python
 from plugin_main import mainlist, class_names
 ```
 
