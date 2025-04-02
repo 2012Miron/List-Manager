@@ -1,4 +1,4 @@
-import os, ast, webbrowser
+import os, ast, subprocess, sys, webbrowser
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 
@@ -7,6 +7,12 @@ def openDocs():
 
 def about():
     messagebox.showinfo('List Manager Viewer', 'List Manager Viewer 1.0.\nList Manager 1.3.1.\nGitHub: https://github.com/2012Miron/List-Manager')
+
+def openBash():
+    if sys.platform.startswith('linux') or sys.platform.startswith('bsd'):
+        subprocess.run(['python3', 'LM-Bash.py'])
+    elif sys.platform.startswith('win'):
+        subprocess.run(['py', 'LM-Bash.py'])
 
 def mainWindow(columns: list, mainlist: list, elements: int):
     root = tk.Tk()
@@ -18,6 +24,7 @@ def mainWindow(columns: list, mainlist: list, elements: int):
     file_menu = tk.Menu(menubar)
     file_menu.add_command(label='Open', command=loadList)
     file_menu.add_command(label='Create New', command=createList)
+    file_menu.add_command(label='Open LM-Bah', command=openBash)
     menubar.add_cascade(label='File', menu=file_menu)
 
     help_menu = tk.Menu(menubar)
