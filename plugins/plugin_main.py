@@ -69,13 +69,10 @@ def cmdHelp():
     print("credits -- see developmenters")
 
 def cmdCredits():
-    print("")
-    print("Developed by Miron")
-    print("Testers: golubdok (no in GitHub)")
+    print("\nDeveloped by Miron")
 
 def cmdVersion():
-    print("")
-    print("List Manager, version 1.3.")
+    print("\nList Manager, version 1.3.1.")
 
 def cmdList():
     print(mainlist[0])
